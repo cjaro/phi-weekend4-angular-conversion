@@ -1,18 +1,20 @@
 body {
-  background-color: blueviolet;
+  background-color: rgb(148, 111, 255);
 }
 
 .complete {
-  color: tomato;
+  color: orangered;
 }
 
 .active {
-  color: SeaGreen;
+  color: limegreen;
 }
 
 h1 {
-  color: dodgerblue;
+  color: lightcyan;
   font-family: fantasy;
+  font-size: 44px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h2 {
@@ -26,4 +28,13 @@ p {
 
 th {
   color: black;
+}
+
+.table th {
+  color: black;
+  font-size: 18px;
+}
+
+.navbar-nav  {
+  font-size: 16px;
 }

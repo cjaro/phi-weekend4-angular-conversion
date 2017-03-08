@@ -1,4 +1,6 @@
 <div class="container">
+<div>Hot from the factory --> {{tc.onView}}<div>
+<div>Array from factory --> {{tc.viewArray}}</div>
 
   <label>New Task</label>
   <input ng-model="tc.newTask.taskName">
@@ -14,11 +16,11 @@
     </thead>
 
     <tbody>
-      <tr ng-repeat="task in tc.taskList" ng-class="{complete: task.status, active: !task.status}">
+      <tr ng-repeat="task in tc.taskList.list" ng-class="{complete: task.status, active: !task.status}">
         <!-- {{task.name}} and the id number is {{task.id}} -->
         <td class="active">{{task.name}}</td>
         <td class="active"><button class="btn btn-success" ng-click="tc.completeTask(task.id)" ng-hide="task.status">Complete</button></td>
-        <td class="active"><button class="btn btn-danger" ng-click="tc.deleteTask(task.id)">Delete</button></td>
+        <td class="complete"><button class="btn btn-danger" ng-click="tc.deleteTask(task.id)">Delete</button></td>
         </tr>
       </tbody>
     </table>
