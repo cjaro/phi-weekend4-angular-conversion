@@ -1,6 +1,6 @@
-/*body {
-  background-color: purple;
-}*/
+body {
+  background-color: blueviolet;
+}
 
 .complete {
   color: tomato;
@@ -8,4 +8,22 @@
 
 .active {
   color: SeaGreen;
+}
+
+h1 {
+  color: dodgerblue;
+  font-family: fantasy;
+}
+
+h2 {
+  color: black;
+  font-family: cursive;
+}
+
+p {
+  color: black;
+}
+
+th {
+  color: black;
 }
